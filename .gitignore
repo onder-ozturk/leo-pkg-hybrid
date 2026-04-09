@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+/ieee_latex/media/
+/ieee_latex/media_word/
+/ieee_latex/build/
+*.tmp
