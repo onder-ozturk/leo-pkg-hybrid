@@ -1,0 +1,62 @@
+{
+  "model": "Loo (ITU-R P.681)",
+  "pass_duration_s": 300,
+  "sample_rate_hz": 100,
+  "max_elevation_deg": 75,
+  "mc_rounds": 50,
+  "main_results": [
+    {
+      "snr_db": 10,
+      "raw_kdr_mean": 0.045377777777777774,
+      "kdr_mean": 0.0036,
+      "kdr_ci": 0.0030523464839001774,
+      "kgr_mean": 0.013468666666666667,
+      "nist_pass_rate": 1.0
+    },
+    {
+      "snr_db": 15,
+      "raw_kdr_mean": 0.029466666666666662,
+      "kdr_mean": 0.0026666666666666666,
+      "kdr_ci": 0.002530723958294626,
+      "kgr_mean": 0.015302666666666666,
+      "nist_pass_rate": 0.98
+    },
+    {
+      "snr_db": 20,
+      "raw_kdr_mean": 0.010711111111111114,
+      "kdr_mean": 0.00013333333333333334,
+      "kdr_ci": 0.0002587068010101182,
+      "kgr_mean": 0.017316666666666668,
+      "nist_pass_rate": 1.0
+    },
+    {
+      "snr_db": 25,
+      "raw_kdr_mean": 0.009,
+      "kdr_mean": 0.0,
+      "kdr_ci": 0.0,
+      "kgr_mean": 0.01755666666666667,
+      "nist_pass_rate": 0.98
+    },
+    {
+      "snr_db": 30,
+      "raw_kdr_mean": 0.008511111111111112,
+      "kdr_mean": 0.0,
+      "kdr_ci": 0.0,
+      "kgr_mean": 0.017648,
+      "nist_pass_rate": 0.98
+    }
+  ],
+  "autocorrelation": {
+    "tau_fast_ms": 18190.0,
+    "tau_slow_ms": 29990.0,
+    "tau_rt_ms": 3.4,
+    "ratio": 8820.588235294117
+  },
+  "secrecy_capacity": {
+    "rho_AB": 0.9855144933142189,
+    "rho_AE": -0.8449001504295431,
+    "I_AB": 2.5598665743190665,
+    "I_AE": 0.9025940354089943,
+    "C_s": 1.6572725389100722
+  }
+}
