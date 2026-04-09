@@ -935,7 +935,8 @@ def write_csv(path: Path, rows: Iterable[dict[str, object]]) -> None:
 
 def save_dual_format(fig: plt.Figure, stem: str) -> None:
     fig.savefig(FIG_DIR / f"{stem}.pdf", bbox_inches="tight")
-    fig.savefig(FIG_DIR / f"{stem}.png", dpi=220, bbox_inches="tight")
+    fig.savefig(FIG_DIR / f"{stem}.png", dpi=220, bbox_inches="tight",
+                facecolor="white", edgecolor="none")
     plt.close(fig)
 
 

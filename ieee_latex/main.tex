@@ -191,7 +191,7 @@ Denklem~\eqref{eq:session_key} ile oluşturulan oturum anahtarının güvenliği
 
 Hesaplama yükü açısından AR(12) tahmin blok başına $\mathcal{O}(p^2 N)$ işlem gerektirmekte, 6 geçişli Cascade $\mathcal{O}(n \log n)$ mertebesinde kalmakta ve HMAC-SHA256 güncellemesi sabit zamanlıdır. 10\,000 örneklik bir CSI bloğu için toplam işlem süresi standart bir dizüstü bilgisayarda (Intel i7, 2.8 GHz) $<$\SI{50}{\milli\second} olarak ölçülmüştür. Uzay sınıfı radyasyona dayanıklı işlemcilerin saat hızı ve mimari farkları göz önüne alındığında, bu değerin gömülü platformlarda birkaç kat artması beklenebilir; yine de uydu geçişi süresine ($\sim$5 dakika) kıyasla gerçek zamanlı işleme için yeterli marj bulunduğu değerlendirilmektedir.
 
-Tüm deneyler Python 3 ile $N=10\,000$ örneklik CSI blokları üzerinde 200 Monte-Carlo tekrarıyla yürütülmüştür. Monte-Carlo benzetimi, rasgele kanal gerçeklemelerinin istatistiksel dağılımını elde etmek için yaygın olarak tercih edilen bir yöntemdir. Tablo~\ref{tab:mc_lit}, son beş yılda uydu/kablosuz PKG alanında Monte-Carlo tabanlı değerlendirme kullanan başlıca çalışmaları özetlemektedir. Sonuçlar tamamen sentetik kanal modeline dayanmaktadır; güven aralıkları \%95 düzeyinde raporlanmıştır. Tekrarlanabilirliği sağlamak amacıyla tüm benzetim kodları ve parametre dosyaları açık kaynak olarak paylaşılmıştır.\footnote{\url{https://github.com/onderozturk/leo-pkg-hybrid}}
+Tüm deneyler Python 3 ile $N=10\,000$ örneklik CSI blokları üzerinde 200 Monte-Carlo tekrarıyla yürütülmüştür. Monte-Carlo benzetimi, rasgele kanal gerçeklemelerinin istatistiksel dağılımını elde etmek için yaygın olarak tercih edilen bir yöntemdir. Tablo~\ref{tab:mc_lit}, son beş yılda uydu/kablosuz PKG alanında Monte-Carlo tabanlı değerlendirme kullanan başlıca çalışmaları özetlemektedir. Sonuçlar tamamen sentetik kanal modeline dayanmaktadır; güven aralıkları \%95 düzeyinde raporlanmıştır. Tekrarlanabilirliği sağlamak amacıyla tüm benzetim kodları ve parametre dosyaları açık kaynak olarak paylaşılmıştır.\footnote{\url{https://github.com/onder-ozturk/leo-pkg-hybrid}}
 
 \begin{table}[t]
 \caption{PKG Alanında Monte-Carlo Benzetimi Kullanan Güncel Çalışmalar}
@@ -427,7 +427,7 @@ Bu çalışmada, LEO uydu-zemin haberleşmesinde yayılım gecikmesi ile kanal t
 İleriye dönük olarak CRYSTALS-Kyber tabanlı kuantum sonrası anahtar kapsülleme entegrasyonu, derin öğrenme ile kanal tahmini, çok kullanıcılı ve mega-konstelasyon senaryolarına ölçekleme, aktif saldırgan modelleri (pilot spoofing, man-in-the-middle) ve gerçek uydu verisine dayalı doğrulama çalışmaları gündemdedir.
 
 \section*{Teşekkür}
-Bu çalışma herhangi bir dış fon desteği almaksızın, yazarların kişisel araştırma çabasıyla gerçekleştirilmiştir. Benzetim kodları ve üretilen veri setleri tekrarlanabilirlik amacıyla \url{https://github.com/onderozturk/leo-pkg-hybrid} adresinde açık kaynak olarak paylaşılmıştır.
+Bu çalışma herhangi bir dış fon desteği almaksızın, yazarların kişisel araştırma çabasıyla gerçekleştirilmiştir. Benzetim kodları ve üretilen veri setleri tekrarlanabilirlik amacıyla \url{https://github.com/onder-ozturk/leo-pkg-hybrid} adresinde açık kaynak olarak paylaşılmıştır.
 
 %% ====================================================================
 \begin{thebibliography}{30}
